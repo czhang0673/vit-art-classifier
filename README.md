@@ -26,8 +26,9 @@ Click the "Open in Colab" badge above. Ensure you have a GPU runtime enabled in 
 ### Local Installation
 If running locally, install the necessary dependencies:
 ```bash
+pip install -r requirements.txt
 
-## Results
+### Results
 
 ### Model Performance
 The fine-tuned ViT-B/16 model achieved a final **Validation Accuracy of 97.50%**. 
@@ -49,4 +50,4 @@ By inspecting the misclassified images, we can see that the model's "mistakes" a
 
 ![Misclassified Examples](misclassified_analysis.jpg)
 
-For instance, an impressionist still life of fish was misclassified as cubism. This is likely due to the sharp angles of the table and the heavy, visible brushstrokes that the Vision Transformer interpreted as geometric fragmentation rather than soft impressionist light.
+For instance, an Impressionist still life of fish was misclassified as Cubism. This is likely due to the sharp angles of the table and the heavy, visible brushstrokes that the Vision Transformer interpreted as geometric fragmentation rather than soft impressionist light.
