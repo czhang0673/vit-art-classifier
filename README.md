@@ -9,8 +9,14 @@ This project demonstrates the fine-tuning of a Vision Transformer (ViT-B/16) to 
 
 The pipeline uses transfer learning to adapt a pre-trained Transformer architecture to domain-specific art imagery, achieving high classification accuracy despite the nuanced visual differences between artistic movements.
 
+## Pre-Trained Weights
+The pre-trained weights (`vit_art_classification.pth`) can be downloaded here: [Google Drive Link](https://drive.google.com/file/d/1DnoM_6EJNmaI1TBXcPlXj03kA_xtciQ8/view?usp=drive_link)
+
+> **Usage Note:** To run inference without retraining, download the `.pth` file and place it in a folder named `models` within the project root directory. The notebook is configured to look for weights at `./models/vit_art_classification.pth`.
+
 ## Key Features
 * **Architecture:** Utilizes a Vision Transformer (ViT) backbone implemented via PyTorch/Torchvision.
+* **Data Augmentation:** Implemented a robust preprocessing pipeline including `RandomResizedCrop`, `RandomRotation`, and `ColorJitter` to improve model generalization across stylized inputs.
 * **Training Pipeline:** Includes Early Stopping, learning rate scheduling, and automated checkpointing.
 * **Evaluation:** Features automated performance metrics, including Loss/Accuracy learning curves and a detailed Confusion Matrix.
 * **Inference:** A dedicated function to run single-image inference on new, unseen art uploads.
