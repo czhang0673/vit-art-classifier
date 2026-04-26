@@ -27,8 +27,9 @@ Click the "Open in Colab" badge above. Ensure you have a GPU runtime enabled in 
 If running locally, install the necessary dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
-### Results
+## Results
 
 ### Model Performance
 The fine-tuned ViT-B/16 model achieved a final **Validation Accuracy of 97.50%**. 
