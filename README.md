@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ## Results
 
 ### Model Performance
-The fine-tuned ViT-B/16 model achieved a final **Validation Accuracy of 97.50%**. 
+The fine-tuned ViT-B/16 model achieved a final **Validation Accuracy of 97.50%** with a **Loss of 0.0865**.
 
 ![Model Training Progress](training_metrics.png)
 
